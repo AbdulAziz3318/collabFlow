@@ -1,0 +1,23 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0;
+
+  padding: 28px 32px 40px;
+
+  max-width: 1600px;
+
+  margin: 0 auto;
+}
+
+.home-page
+  .recent-projects {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .home-page {
+    padding: 22px 18px;
+  }
+}

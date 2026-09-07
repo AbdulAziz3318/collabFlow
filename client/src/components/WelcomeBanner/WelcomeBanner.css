@@ -1,0 +1,40 @@
+.welcome-banner{
+    background:linear-gradient(135deg,#5B5FEF,#7C3AED);
+    color:white;
+    border-radius:20px;
+    padding:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.banner-content{
+    width:55%;
+}
+
+.banner-content h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.banner-content p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.create-btn{
+    padding:15px 30px;
+    border:none;
+    background:white;
+    color:#5B5FEF;
+    font-size:16px;
+    font-weight:600;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.banner-image img{
+    width:320px;
+}

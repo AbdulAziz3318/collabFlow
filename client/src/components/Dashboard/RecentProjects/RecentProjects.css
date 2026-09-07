@@ -1,0 +1,114 @@
+.recent-projects {
+  padding: 24px;
+
+  background: white;
+
+  border:
+    1px solid #e8edf5;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 30px
+    rgba(15, 23, 42, 0.04);
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+}
+
+.section-heading h2 {
+  color: #0f172a;
+
+  font-size: 18px;
+  font-weight: 750;
+}
+
+.section-heading p {
+  margin-top: 4px;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+}
+
+.recent-project-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  padding: 15px 0;
+
+  border-bottom:
+    1px solid #f1f5f9;
+}
+
+.recent-project-row:last-child {
+  border-bottom: none;
+}
+
+.recent-project-row strong {
+  display: block;
+
+  color: #1e293b;
+
+  font-size: 13px;
+}
+
+.recent-project-row span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+}
+
+.recent-progress {
+  width: 150px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.recent-progress > div {
+  flex: 1;
+
+  height: 6px;
+
+  border-radius: 999px;
+
+  background: #eef2f7;
+
+  overflow: hidden;
+}
+
+.recent-progress > div span {
+  height: 100%;
+
+  margin: 0;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #6366f1,
+      #818cf8
+    );
+}
+
+.recent-progress small {
+  color: #64748b;
+
+  font-size: 11px;
+}

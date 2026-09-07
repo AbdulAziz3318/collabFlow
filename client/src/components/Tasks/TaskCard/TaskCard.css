@@ -1,0 +1,177 @@
+.task-card {
+  padding: 17px;
+
+  background: #ffffff;
+
+  border:
+    1px solid #e8edf5;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 6px 18px
+    rgba(15, 23, 42, 0.035);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.task-card:hover {
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 12px 24px
+    rgba(15, 23, 42, 0.07);
+}
+
+.task-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 13px;
+}
+
+.priority-badge {
+  padding: 5px 9px;
+
+  border-radius: 999px;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.priority-badge.high {
+  background: #feecec;
+  color: #dc2626;
+}
+
+.priority-badge.medium {
+  background: #fff5db;
+  color: #d97706;
+}
+
+.priority-badge.low {
+  background: #e9f9ef;
+  color: #15803d;
+}
+
+.task-delete-btn {
+  width: 29px;
+  height: 29px;
+
+  display: grid;
+  place-items: center;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #fff1f2;
+  color: #e11d48;
+
+  font-size: 11px;
+
+  transition: 0.2s ease;
+}
+
+.task-delete-btn:hover {
+  background: #e11d48;
+  color: #ffffff;
+}
+
+.task-card h4 {
+  color: #0f172a;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  margin-bottom: 8px;
+}
+
+.task-description {
+  min-height: 38px;
+
+  color: #64748b;
+
+  font-size: 12px;
+  line-height: 1.6;
+
+  margin-bottom: 15px;
+}
+
+.task-meta {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  padding-top: 12px;
+
+  border-top:
+    1px solid #f1f5f9;
+}
+
+.task-meta span {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+.task-meta svg {
+  color: #94a3b8;
+}
+
+.ai-assignment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 13px;
+
+  padding: 9px 10px;
+
+  border-radius: 9px;
+
+  background: #f0f1ff;
+
+  color: #4f46e5;
+
+  font-size: 10px;
+}
+
+.ai-assignment strong {
+  font-size: 12px;
+}
+
+.task-status-select {
+  width: 100%;
+
+  margin-top: 13px;
+
+  padding: 9px 10px;
+
+  border:
+    1px solid #e2e8f0;
+
+  border-radius: 9px;
+
+  background: #f8fafc;
+
+  color: #475569;
+
+  font-size: 11px;
+
+  outline: none;
+}
+
+.task-status-select:focus {
+  border-color: #6366f1;
+}

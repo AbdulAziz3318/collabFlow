@@ -1,0 +1,401 @@
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+
+  background: #f6f8fc;
+  overflow: hidden;
+}
+
+/* =========================
+   LEFT BRANDING SECTION
+========================= */
+
+.login-left {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 80px 10%;
+
+  color: white;
+
+  background:
+    radial-gradient(
+      circle at 20% 25%,
+      rgba(129, 140, 248, 0.35),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 80% 75%,
+      rgba(56, 189, 248, 0.18),
+      transparent 35%
+    ),
+    linear-gradient(
+      145deg,
+      #0f172a 0%,
+      #1e1b4b 52%,
+      #4338ca 100%
+    );
+
+  overflow: hidden;
+}
+
+.login-left::before {
+  content: "";
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  border-radius: 50%;
+
+  right: -170px;
+  top: -160px;
+
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.login-left::after {
+  content: "";
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+
+  left: -120px;
+  bottom: -120px;
+
+  background: rgba(129, 140, 248, 0.12);
+}
+
+.login-left h1 {
+  position: relative;
+  z-index: 2;
+
+  max-width: 650px;
+
+  font-size: clamp(48px, 5vw, 74px);
+  font-weight: 800;
+
+  letter-spacing: -3px;
+  line-height: 1;
+
+  margin-bottom: 28px;
+}
+
+.login-left h1::after {
+  content: "Workspace Intelligence";
+
+  display: block;
+
+  width: fit-content;
+
+  margin-top: 22px;
+
+  padding: 8px 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: #c7d2fe;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.login-left p {
+  position: relative;
+  z-index: 2;
+
+  max-width: 550px;
+
+  font-size: 17px;
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* subtle professional grid */
+
+.login-left {
+  background-size:
+    auto,
+    auto,
+    auto;
+}
+
+.login-left > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   RIGHT LOGIN SECTION
+========================= */
+
+.login-right {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 60px 40px;
+
+  background:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(99, 102, 241, 0.1),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 10% 90%,
+      rgba(56, 189, 248, 0.07),
+      transparent 30%
+    ),
+    #f8fafc;
+}
+
+.login-right .card {
+  width: 100%;
+  max-width: 445px;
+
+  padding: 42px 40px;
+
+  border: 1px solid rgba(226, 232, 240, 0.9);
+
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  box-shadow:
+    0 30px 80px rgba(15, 23, 42, 0.1),
+    0 4px 15px rgba(15, 23, 42, 0.04);
+
+  backdrop-filter: blur(18px);
+}
+
+.login-right h2 {
+  color: #0f172a;
+
+  font-size: 30px;
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+
+  margin-bottom: 8px;
+}
+
+.login-right .card > p:first-of-type {
+  color: #64748b;
+
+  font-size: 14px;
+
+  margin-bottom: 28px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.login-right .input-group {
+  margin-bottom: 18px;
+}
+
+.login-right .input-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #334155;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.login-right .input-group input {
+  width: 100%;
+
+  padding: 14px 15px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  color: #0f172a;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.login-right .input-group input::placeholder {
+  color: #94a3b8;
+}
+
+.login-right .input-group input:hover {
+  border-color: #cbd5e1;
+}
+
+.login-right .input-group input:focus {
+  border-color: #6366f1;
+
+  box-shadow:
+    0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.login-right .btn {
+  width: 100%;
+
+  margin-top: 8px;
+
+  padding: 14px 18px;
+
+  border: none;
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #6366f1,
+      #4f46e5
+    );
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  box-shadow:
+    0 12px 24px rgba(79, 70, 229, 0.25);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.login-right .btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 16px 30px rgba(79, 70, 229, 0.32);
+}
+
+.login-right .btn:active {
+  transform: translateY(0);
+}
+
+/* =========================
+   REGISTER / LOGIN LINK
+========================= */
+
+.login-right .card > p:last-child {
+  margin-top: 24px !important;
+  margin-bottom: 0 !important;
+
+  text-align: center;
+
+  color: #64748b !important;
+
+  font-size: 13px;
+}
+
+.login-right a {
+  color: #4f46e5;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.login-right a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+  .login-page {
+    grid-template-columns: 1fr;
+  }
+
+  .login-left {
+    min-height: 300px;
+
+    padding: 55px 40px;
+  }
+
+  .login-left h1 {
+    font-size: 48px;
+  }
+
+  .login-left p {
+    font-size: 15px;
+  }
+
+  .login-right {
+    padding: 45px 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .login-left {
+    min-height: 250px;
+
+    padding: 42px 24px;
+  }
+
+  .login-left h1 {
+    font-size: 38px;
+
+    letter-spacing: -2px;
+  }
+
+  .login-left h1::after {
+    font-size: 10px;
+  }
+
+  .login-left p {
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+  .login-right {
+    padding: 30px 16px;
+  }
+
+  .login-right .card {
+    padding: 30px 24px;
+
+    border-radius: 20px;
+  }
+
+  .login-right h2 {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,19 @@
+.team-card{
+
+background:white;
+
+padding:25px;
+
+border-radius:18px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.team-card ul{
+
+margin-top:20px;
+
+line-height:2;
+
+}

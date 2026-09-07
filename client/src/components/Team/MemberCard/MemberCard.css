@@ -1,0 +1,261 @@
+.member-card {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 305px;
+
+  padding: 19px;
+
+  border: 1px solid #e7eaf0;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 2px 8px
+    rgba(15, 23, 42, 0.025);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #d8dcf0;
+
+  box-shadow:
+    0 10px 28px
+    rgba(15, 23, 42, 0.065);
+}
+
+.member-card-top {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  margin-bottom: 16px;
+}
+
+.member-avatar {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid #dfe4ff;
+  border-radius: 11px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.member-main-info {
+  min-width: 0;
+
+  flex: 1;
+}
+
+.member-main-info h3 {
+  margin: 0;
+
+  overflow: hidden;
+
+  color: #1e293b;
+
+  font-size: 13px;
+  font-weight: 750;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.member-main-info span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #7b8494;
+
+  font-size: 9.5px;
+}
+
+.member-status {
+  padding: 4px 8px;
+
+  border-radius: 999px;
+
+  font-size: 8px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.member-status.available {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.member-status.busy {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.member-email {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  padding-bottom: 14px;
+
+  border-bottom: 1px solid #f0f2f5;
+
+  color: #8a93a3;
+
+  font-size: 9.5px;
+}
+
+.member-email svg {
+  flex-shrink: 0;
+
+  font-size: 10px;
+}
+
+.member-email span {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.member-skills-section {
+  margin-top: 15px;
+}
+
+.member-section-title {
+  margin-bottom: 8px;
+
+  color: #94a3b8;
+
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.member-skills {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  min-height: 47px;
+}
+
+.member-skills > span {
+  display: inline-flex;
+  align-items: center;
+
+  height: 24px;
+
+  padding: 0 8px;
+
+  border-radius: 7px;
+
+  background: #f4f5f8;
+  color: #586274;
+
+  font-size: 8.5px;
+  font-weight: 650;
+}
+
+.member-skills .skill-more {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.member-skills .no-skills {
+  background: transparent;
+  color: #a1a8b5;
+
+  padding: 0;
+}
+
+.member-details {
+  display: grid;
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 8px;
+
+  margin-top: 16px;
+}
+
+.member-details > div {
+  display: grid;
+  grid-template-columns:
+    auto 1fr auto;
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 9px;
+
+  border-radius: 8px;
+
+  background: #f8fafc;
+}
+
+.member-details svg {
+  color: #94a3b8;
+
+  font-size: 9px;
+}
+
+.member-details span {
+  color: #8b94a3;
+
+  font-size: 8px;
+}
+
+.member-details strong {
+  color: #475569;
+
+  font-size: 9px;
+}
+
+.member-profile-btn {
+  width: 100%;
+  height: 36px;
+
+  margin-top: auto;
+
+  border: 1px solid #e0e4ec;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #4f46e5;
+
+  font-size: 9.5px;
+  font-weight: 750;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.member-profile-btn:hover {
+  border-color: #c7d2fe;
+  background: #f7f7ff;
+}

@@ -1,0 +1,89 @@
+@import "../Login/Login.css";
+
+.input-group select {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.auth-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #0ea5e9);
+  font-family: Arial, sans-serif;
+}
+
+/* LEFT SIDE */
+.auth-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  color: #ffffff;
+}
+
+.auth-left h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.auth-left p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* RIGHT SIDE */
+.auth-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD */
+.auth-right .card {
+  width: 350px;
+  background: #ffffff !important;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* HEADING */
+.auth-right h2 {
+  color: #0f172a;
+  text-align: center;
+}
+
+/* INPUT FIX */
+.auth-right input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #0f172a;
+  background-color: #f8fafc;
+}
+
+.auth-right input:focus {
+  border-color: #0ea5e9;
+  outline: none;
+  background-color: #ffffff;
+}
+
+/* LABEL */
+.auth-right label {
+  color: #1e293b;
+}
+
+/* LINK */
+.auth-right a {
+  color: #0ea5e9;
+}
+

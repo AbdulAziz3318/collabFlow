@@ -1,0 +1,12 @@
+.projects-page {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  padding: 32px 34px 50px;
+  background: #f7f8fc;
+}
+
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 22px 16px 40px;
+  }
+}

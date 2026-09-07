@@ -1,0 +1,32 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(310px, 1fr)
+  );
+
+  gap: 18px;
+}
+
+.projects-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 260px;
+
+  border: 1px dashed #d8dde8;
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+}
+
+@media (max-width: 500px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}

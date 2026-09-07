@@ -1,0 +1,89 @@
+.recent-tasks {
+  padding: 24px;
+
+  background: white;
+
+  border:
+    1px solid #e8edf5;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 30px
+    rgba(15, 23, 42, 0.04);
+}
+
+.recent-task-row {
+  display: grid;
+
+  grid-template-columns:
+    auto 1fr auto;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 14px 0;
+
+  border-bottom:
+    1px solid #f1f5f9;
+}
+
+.recent-task-row:last-child {
+  border-bottom: none;
+}
+
+.task-status-dot {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #94a3b8;
+}
+
+.task-status-dot.working {
+  background: #f59e0b;
+}
+
+.task-status-dot.done {
+  background: #16a34a;
+}
+
+.recent-task-row strong {
+  color: #1e293b;
+
+  font-size: 13px;
+}
+
+.recent-task-row p {
+  margin-top: 4px;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+}
+
+.priority-chip {
+  padding: 5px 9px;
+
+  border-radius: 999px;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.priority-chip.high {
+  background: #feecec;
+  color: #dc2626;
+}
+
+.priority-chip.medium {
+  background: #fff6df;
+  color: #d97706;
+}
+
+.priority-chip.low {
+  background: #eafaf0;
+  color: #15803d;
+}
